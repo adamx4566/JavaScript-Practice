@@ -4,7 +4,7 @@ This repository contains my practice files for learning and experimenting with J
 The repository will be updated over time as I continue learning and building more advanced functionality.
 
 <p>
-  <img src="assets/logos/javascript-logo.svg" alt="JavaScript Logo" width="100"/>
+  <img src="assets/logos/JavaScript-logo.svg" alt="JavaScript Logo" width="100"/>
 </p>
 
 ## Image Credits
