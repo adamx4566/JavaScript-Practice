@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4d</title>
+  </head>
+  <body>
+    
+
+    <script>
+      function convertTemperature(degrees, unit) {
+        if(unit == 'C') {
+          degrees = (degrees*9/5)+32;
+          console.log(`${degrees}F`)
+        } else if(unit == 'F') {
+          degrees = (degrees-32)*5/9;
+          console.log(`${degrees}C`)
+        }
+      }
+      convertTemperature(86, 'F');
+    </script>
+  </body>
+</html>
