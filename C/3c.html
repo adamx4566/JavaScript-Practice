@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3c</title>
+  </head>
+  <body>
+    
+
+    <script>
+      let randomNumber = Math.random();
+      let result = '';
+      if(randomNumber < 0.5) {
+        result = 'heads';
+      } else {
+        result = 'tails';
+      }
+      let quess = 'tails';
+      if(quess == result) {
+        console.log('You win!');
+      } else {
+        console.log('You lose!');
+      }
+    </script>
+  </body>
+</html>
