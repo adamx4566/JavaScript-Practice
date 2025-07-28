@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5g</title>
+  </head>
+  <body>
+
+    <button onclick="
+      playGame('heads')
+    ">heads</button>
+    <button onclick="
+      playGame('tails')
+    ">tails</button>
+
+    <script>
+     
+      let score = JSON.parse(localStorage.getItem('score')) || {
+         wins: 0,
+         losses: 0
+      }
+      let result = '';
+      function playGame(quess) {
+      let randomNumber = Math.random();
+      if(randomNumber < 0.5) {
+        result = 'heads';
+      } else {
+        result = 'tails';
+      }
+      
+      if(quess == result) {
+        console.log('You win!');
+        score.wins += 1;
+      } else {
+        console.log('You lose!');
+        score.losses += 1;
+      }
+      console.log(`wins: ${score.wins} losses: ${score.losses}`);
+      localStorage.setItem('score', JSON.stringify(score));
+    }
+    </script>
+  </body>
+</html>

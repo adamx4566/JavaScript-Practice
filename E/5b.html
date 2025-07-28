@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5b</title>
+  </head>
+  <body>
+    
+
+    <script>
+      const basketball = {
+        name: 'basketball',
+        price: 2095
+      };
+      const socks = {
+        name: 'socks',
+        price: 1000
+      };
+      function comparePrice(product1, product2) {
+        if(product1.price > product2.price) {
+          return console.log(product1.name);
+        } else {
+          return console.log(product2.name);
+        }
+      }
+      comparePrice(basketball, socks);
+    </script>
+  </body>
+</html>
