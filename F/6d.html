@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6d</title>
+  </head>
+  <body>
+    <input placeholder="Name" class="js-name" onkeydown="
+      enter();
+      ">
+    <button onclick="
+    
+      setName()
+    
+    ">Submit</button>
+    <p class="js-text"></p>
+    <script>
+      const name = document.querySelector('.js-name');
+      const text = document.querySelector('.js-text');
+      function setName() {
+        text.innerHTML = `Your name is: ${name.value}`;      
+      }
+      function enter() {
+        if(event.key === 'Enter') {
+          setName();
+        }        
+      }
+    </script>
+  </body>
+</html>

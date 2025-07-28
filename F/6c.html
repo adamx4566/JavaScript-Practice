@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6c</title>
+  </head>
+  <body>
+    <button onclick="
+        choice('heads')
+      ">heads</button>
+    <button onclick="
+         choice('tails')
+      ">tails</button>
+    <p class="js-text"></p>
+
+    <script>
+      let text = document.querySelector('.js-text');
+      function choice(choice) {
+      if(choice === 'heads') {
+        text.innerHTML = 'You chose: heads';
+      } else if (choice === 'tails') {
+        text.innerHTML = 'You chose: tails';
+      }
+    }
+    </script>
+  </body>
+</html>
