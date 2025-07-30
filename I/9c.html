@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9c</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <button class="js-button" onclick="
+        setTimeout(buttonAction, 1000);
+      ">Start</button>
+
+    <script>
+      const buttonJS = document.querySelector('.js-button');
+      function buttonAction() {
+      if(buttonJS.innerText === 'Start') {
+        buttonJS.innerText = 'Finished!'
+      } else {
+        buttonJS.innerText = 'Start'
+      }
+    }
+    </script>
+  </body>
+</html>

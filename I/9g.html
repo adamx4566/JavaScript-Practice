@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9g</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <button onclick="
+     addOne();
+      ">Add</button>
+    <button onclick="
+    removeOne();
+    ">Remove</button>
+
+    <script>
+      let isNewMessage = false;
+      let messages = 2;
+      setInterval(function() {
+        
+        if (isNewMessage) {
+          document.title = `(${messages}) New messages`;
+        } else {
+          document.title = '9g';
+        } 
+        isNewMessage = !isNewMessage; 
+        if(messages === 0) {
+          document.title = '9g';
+        }
+      }, 1000);
+      function addOne() {
+        messages = messages + 1;
+      }
+      function removeOne() {
+        messages = messages - 1;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9f</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    
+
+    <script>
+      let isNewMessage = false;
+
+      setInterval(function() {
+        if (isNewMessage) {
+          document.title = '(2) New messages';
+        } else {
+          document.title = '9f';
+        }
+        isNewMessage = !isNewMessage; 
+      }, 1000);
+    </script>
+  </body>
+</html>

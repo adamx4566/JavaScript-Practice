@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9e</title>
+    <style>
+      .message {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="js-button" onclick="
+        document.querySelector('.js-button').innerText = 'Loading...';
+        setTimeout(buttonAction, 1000);
+      ">Start</button>
+    
+    <button class="js-cart" onclick="
+      clearTimeout();
+      addToCart();
+      setTimeout(function() {cartJS.innerHTML = ''}, 2000);
+    ">Add to cart</button>
+    <div class="js-message message"></div>
+
+    <script>
+      const buttonJS = document.querySelector('.js-button');
+      function buttonAction() {
+      if(buttonJS.innerText === 'Loading...') {
+        buttonJS.innerText = 'Finished!'
+      } else if (buttonJS.innerText === 'Loading...') {
+        buttonJS.innerText = 'Start'
+      }
+    }
+
+    const cartJS = document.querySelector('.js-message');
+    function addToCart() {
+      const html = `<div>Added</div>`;
+      cartJS.innerHTML = html;
+      
+    }
+    
+
+    </script>
+  </body>
+</html>
